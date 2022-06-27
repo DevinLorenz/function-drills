@@ -12,7 +12,11 @@
 */
 
 //CODE HERE
+function helloWorld(){
+  console.log(`Hello, World!`)
+}
 
+helloWorld()
 
 ////////////////// PROBLEM 2 ////////////////////
 
@@ -21,7 +25,11 @@
 */
 
 //CODE HERE
+let jsNinja = () => {
+  console.log(`I am a JavaScript ninja!`)
+}
 
+jsNinja()
 
 ////////////////// PROBLEM 3 ////////////////////
 /*
@@ -31,7 +39,11 @@
 */
 
 //CODE HERE
+function printName(name) {
+  console.log(name)
+}
 
+printName(`Cameron`)
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
@@ -44,7 +56,11 @@
 */
 
 //CODE HERE
+function greeting(name){
+  console.log(`Hello, ${name}`)
+}
 
+greeting(`Jake`)
 
 ////////////////// PROBLEM 5 ////////////////////
 
@@ -59,6 +75,16 @@
 
 //CODE HERE
 
+let compareNums = (num1,num2) => {
+  if (num1 > num2){
+    return console.log(num1)
+  } else if (num1 < num2){
+    return console.log(num2)
+  } else if (num1 === num2) {
+    return console.log(num1)
+  }
+}
+compareNums(13,1)
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -70,6 +96,16 @@
 
 //CODE HERE
 
+
+function add(n1,n2) {
+  if (typeof n1 === 'string' || typeof n2 === 'string') {
+    return parseInt(n1) + parseInt(n2)
+  } else {
+ return n1 + n2 
+  }
+}
+let sum = add(`25`,6)
+console.log(sum)
 
 ////////////////// PROBLEM 7 ////////////////////
 
@@ -84,7 +120,7 @@ const exclaim = function(str) {
 
 // console.log('arrow')
 // console.log('declaration')
-// console.log('expression')
+console.log('expression')
 
 
 
@@ -99,7 +135,7 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-// console.log('arrow')
+console.log('arrow')
 // console.log('declaration')
 // console.log('expression')
 
@@ -110,8 +146,8 @@ const exclaimTwo = str => {
   Brownie points if you use a template string
 */
 
-
-
+let exclaimThree = () => console.log('a template string')
+exclaimThree()
 ////////////////// PROBLEM 9 ////////////////////
 
 /*
@@ -124,7 +160,7 @@ function exclaimFour(str) {
 }
 
 // console.log('arrow')
-// console.log('declaration')
+console.log('declaration')
 // console.log('expression')
 
 
@@ -139,6 +175,16 @@ function exclaimFour(str) {
 
 //CODE HERE
 
+function nameCheck(name) {
+  if (name === 'Steven'){
+    console.log(`What is up ${name}?`)
+  } else if (name === 'Brian') {
+    console.log(`Hey ${name}!`)
+  } else {
+    console.log(`Cool name, ${name}.`)
+  }
+}
+nameCheck(`Devin`)
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
@@ -151,7 +197,20 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
+function faveColorFinder(color) {
+  if(color === 'red') {
+    console.log(`Red is a great color.`)
+  } else if(color === 'green') {
+    console.log(`green is a solid favorite color`)
+  } else if (color === 'black') {
+    console.log(`so trendy!`)
+  } else {
+    console.log(`You need to evaluate your favorite color choice`)
+  }
 
+
+}
+let colorRating = faveColorFinder('black')
 
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
@@ -162,9 +221,17 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
+function printAllNames() {
+  
+  for (let j = 0 ; j >= namesArr.length ; j++) {
+    printAllNames() = namesArr[j]
+  }    
+    console.log(namesArr)
+ }
+  
+printAllNames()
 
-
-////////////////// PROBLEM 13 ////////////////////
+    ////////////////// PROBLEM 13 ////////////////////
 /*
   Create a function called thatsOdd that takes in a single argument (a number).
   Using conditional logic, if the number is even, return 'That's not odd!'
@@ -173,7 +240,15 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
+function thatsOdd(num) {
+  if (num % 2 === 0) {
+    console.log(`That's not odd`)
+  } else if (num % 2 !== 0) {
+    console.log(`Tha's odd indeed!`)
+  }
+}
 
+thatsOdd(47)
 
 ////////////////// PROBLEM 14 ////////////////////
 
